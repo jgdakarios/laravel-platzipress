@@ -16,3 +16,15 @@
     # Instalacion de Eloquent Sluggable (eloquen-sluggable-para-titulos)
 
         > composer require cviebrock/eloquent-sluggable
+
+# Creación de tablas, entidades y datos de prueba
+
+    # Configuracion de la migracion Post
+    # Configuracion del factory Post
+    # Configuracion del seed
+        > Creacion de User.
+        > Creacion de Posts
+
+    # Creacion de migraciones / ejecucion de seeds
+
+        > php artisan migrate:refresh --seed
