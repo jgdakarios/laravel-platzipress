@@ -28,3 +28,14 @@
     # Creacion de migraciones / ejecucion de seeds
 
         > php artisan migrate:refresh --seed
+
+# Plantillas de trabajo y entendiendo el login
+
+    # Creacion de rutas.
+
+    # Creacion del controller Page
+        > php artisan make:controller PageController
+
+    # Relacionamos el modelo User con Post y viceversa.
+
+    # Creamos las vistas.
