@@ -1,0 +1,18 @@
+# Proyecto Blog: presentación y configuración inicial
+    
+    # Instalacion del framework
+
+        > laravel new platzipress --auth
+
+    # Generacion de modelo con migracion / factory / controller
+
+        > php artisan make:model Post -mfc
+
+            - app/Post.php
+            - database/migrations/2020_08_18_133349_create_posts_table.php
+            - database/factories/PostFactory.php
+            - app/Http/Controllers/PostController.php
+
+    # Instalacion de Eloquent Sluggable (eloquen-sluggable-para-titulos)
+
+        > composer require cviebrock/eloquent-sluggable
