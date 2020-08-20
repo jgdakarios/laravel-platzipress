@@ -46,6 +46,22 @@
 
     # Paginacion
 
+# Vista index y botones de acción
+
+    # Generamos el controlador en modo recurso
+
+        > php artisan make:controller Backend/PostController --resource --model=Post
+
+    # Generamos las rutas en modo recurso (routes/web.php)
+
+        > Routes::resource('posts', 'PostController');
+
+    # Creamos las vistas:
+
+        > posts.index
+
+
+
 
 
 
