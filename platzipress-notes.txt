@@ -39,3 +39,18 @@
     # Relacionamos el modelo User con Post y viceversa.
 
     # Creamos las vistas.
+
+# Diseño visual con Bootstrap
+
+    # Creacion de metodo en modelo Post para obtener el extracto.
+
+    # Paginacion
+
+
+
+
+
+
+
+
+
