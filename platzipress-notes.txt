@@ -74,6 +74,43 @@
 
     # Permitimos en el modelo la asignacion masiva para los datos.
 
+# Creando la función de editar un post
+
+    # Editar un registro
+
+        Directivas blade en el formulario
+            > @csrf 
+            > @method('PUT')
+
+        Metodo en el controller resource
+
+            +--------+-----------+------------------------+------------------+------------------------------------------------------------------------+------------+
+            | Domain | Method    | URI                    | Name             | Action                                                                 | Middleware |
+            +--------+-----------+------------------------+------------------+------------------------------------------------------------------------+------------+
+            |        | PUT|PATCH | posts/{post}           | posts.update     | App\Http\Controllers\Backend\PostController@update                     | web        |
+            +--------+-----------+------------------------+------------------+------------------------------------------------------------------------+------------+
+
+# Actualizando nuestros posts
+
+    Actualizar registro en el controller
+
+        > $post->update( $request->validated() );
+
+    Eliminar imagenes en el storage
+        > use Illuminate\Support\Facades\Storage;
+        > Storage::disk('public')->delete( $post->image );
+
+    Eliminando un post
+        > $post->delete();
+
+# Integrando contenido audiovisual
+
+    Blabe
+        > {{ $var }}        Imprime texto escapando los tags HTML
+        > {{!! $var !!}}    Imprime text sin escapar los tags HTML
+
+    Storage - generar un enlace entre public y storage para consumir los recursos
+        > php artisan storage:link
 
 
 
