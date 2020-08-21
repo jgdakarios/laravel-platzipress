@@ -112,6 +112,15 @@
     Storage - generar un enlace entre public y storage para consumir los recursos
         > php artisan storage:link
 
+# Usar el slug como id para acceder al post y tener URL amigables
+
+    # Desde el modelo de eloquent
+
+        public function getRouteKeyName()
+        {
+            return 'slug';
+        } 
+
 
 
 

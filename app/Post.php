@@ -43,4 +43,9 @@ class Post extends Model
         if( $this->image )
             return url("storage/$this->image");
     }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    } 
 }
