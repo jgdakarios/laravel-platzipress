@@ -60,8 +60,19 @@
 
         > posts.index
 
-# 
+# Implementación del formulario de creación
 
+# Implementación del guardado
+
+    # Generamos clase de validacion y retornamos en ella las validaciones.
+
+        > php artisan make:request PostRequest
+
+    # Guardamos la informacion del post.
+
+    # Validamos si poseemos imagen en el request y actualizamos en caso de ser true.
+
+    # Permitimos en el modelo la asignacion masiva para los datos.
 
 
 
